@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrest Calculator</title>
+    <style>
+        #main
+        {
+            box-shadow: 0 0 10px gray;
+            border-width: 2px;
+            margin: 7% 33% 10px 33%;
+            border-radius: 10px;
+        }
+        input{
+            margin: 15px 10px 5px 15px;
+            border-radius: 5px;
+        }
+        label{
+            margin:15px 2px 2px 10px;
+        }
+        button{
+            border-radius:5px;
+            background:linear-gradient(to right,blue,red);
+            margin: 10px 35% 10px 35%;
+        }
+        button:hover
+        {
+            transform: scale(1.1);
+            border-radius: 10px;
+            background: linear-gradient(to right,red,blue);
+
+        }
+        output
+        {
+            margin:10px 35px 10px 35px;
+        }
+
+    </style>
+    <script src="J1.js"></script>
+</head>
+<body>
+    <h2 align="center">Welcome To Intrest Calculator!</h2>
+    <hr>
+    <div id="main">
+        <label for="amt">Principal Amount:</label>
+        <input type="text" id="amt"><br>
+        <label for="int">Intrest Rate:</label>
+        <input type="text" id="int"><br>
+        <label for="tme">Time:(Years)</label>
+        <input type="text" id="tme"><br>
+        <button onclick="calcu();">Calculate</button><br>
+        <output id="out"></output><br>
+        <output id="out1"></output>
+    </div>
+    <div id="niam">
+        <h2 align="center">Testing!</h2>
+        <hr>
+        <script>
+            let gh,jk;
+            gh="7987697.4743985",jk="18";
+             kj=parseFloat(gh);
+             lola=parseInt("234.45");
+             document.writeln(lola);
+             document.writeln(parseInt("7865.98"));
+        </script>
+    </div>
+    <div>
+        <h2 align="center">On Input Tag</h2>
+        <hr>
+        <label for="">
+            Conversion Of Celsius To Farenheit
+        </label>
+        <input type="text" id="cel" placeholder="Celsius" oninput="far.value=(cel.value*9/5)+32"><span>=</span><input type="text" id="far" placeholder="Farenheit" oninput="cel.value=(far.value*5/9)-32">
+    </div>
+</body>
+</html>
